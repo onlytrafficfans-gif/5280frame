@@ -168,7 +168,42 @@ function vitePluginPublicPlatformConfig(): Plugin {
   };
 }
 
-const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
+// Emit page-specific metadata for crawlers that do not execute the SPA.
+function vitePluginStaticPageMetadata(): Plugin {
+  const metadata = {
+    about: ["About Our Commercial Framing Team", "Commercial metal framing and drywall subcontracting throughout Colorado, backed by 22 years of construction experience."],
+    services: ["Commercial Metal Framing & Drywall Services", "Interior and exterior metal framing, commercial drywall installation, finishing and painting in Colorado."],
+    work: ["Framing & Drywall Work", "Explore illustrative photography of the work involved in metal framing, drywall installation and finishing."],
+    contact: ["Commercial Subcontractor Quote", "Request a quote for commercial metal framing, drywall, finishing and painting in Colorado."],
+  } as const;
+  return {
+    name: "static-page-metadata",
+    apply: "build",
+    closeBundle() {
+      const output = path.resolve(PROJECT_ROOT, "dist/public");
+      const indexPath = path.join(output, "index.html");
+      if (!fs.existsSync(indexPath)) return;
+      const html = fs.readFileSync(indexPath, "utf8");
+      const base = "https://www.5280frame.com";
+      fs.writeFileSync(indexPath, html.replace("</head>", `<link rel="canonical" href="${base}/" /><link rel="preload" as="image" href="/images/image-2.webp" fetchpriority="high" /></head>`));
+      for (const [slug, [label, description]] of Object.entries(metadata)) {
+        const title = `${label} | 5280 Frame and Drywall LLC`;
+        const escapedTitle = title.replaceAll("&", "&amp;");
+        const pageHtml = html
+          .replace(/<title>.*?<\/title>/, `<title>${escapedTitle}</title>`)
+          .replace(/<meta name="description" content="[^"]*"\s*\/>/, `<meta name="description" content="${description}" />`)
+          .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapedTitle}" />`)
+          .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${description}" />`)
+          .replace("</head>", `<link rel="canonical" href="${base}/${slug}" /></head>`);
+        const directory = path.join(output, slug);
+        fs.mkdirSync(directory, { recursive: true });
+        fs.writeFileSync(path.join(directory, "index.html"), pageHtml);
+      }
+    },
+  };
+}
+
+const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector(), vitePluginStaticPageMetadata()];
 
 export default defineConfig({
   plugins,

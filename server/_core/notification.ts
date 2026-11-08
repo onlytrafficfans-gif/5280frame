@@ -120,7 +120,7 @@ export async function notifyOwner(
 
 /** Sends a website inquiry email through Resend to the client's configured inbox. */
 export async function notifyClientEmail(
-  payload: Omit<ClientEmailPayload, "recipient">
+  payload: Omit<ClientEmailPayload, "recipient"> & { replyTo?: string }
 ): Promise<boolean> {
   const { title, content } = validatePayload(payload);
 
@@ -140,6 +140,7 @@ export async function notifyClientEmail(
       body: JSON.stringify({
         from: ENV.resendFromEmail,
         to: [CLIENT_EMAIL],
+        ...(payload.replyTo ? { reply_to: payload.replyTo } : {}),
         subject: title,
         text: content,
       }),

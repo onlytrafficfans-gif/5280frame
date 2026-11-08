@@ -1,1 +1,1 @@
-{"routes":[{"path":"/","title":"5280frameanddrywallLLC"},{"path":"/404","title":"Page not found"}]}
+{"routes":[{"path":"/","title":"Home"},{"path":"/about","title":"Who we are"},{"path":"/services","title":"Services"},{"path":"/work","title":"Our work"},{"path":"/contact","title":"Request an estimate"},{"path":"/404","title":"Page not found"}]}

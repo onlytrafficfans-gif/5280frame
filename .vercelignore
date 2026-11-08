@@ -1,0 +1,16 @@
+/*
+!api
+!client
+!server
+!shared
+!drizzle
+!patches
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!vite.config.ts
+!tsconfig.json
+!vercel.json
+!app.config.ts
+!components.json
+api/index.cjs

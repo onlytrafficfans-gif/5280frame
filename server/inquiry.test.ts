@@ -31,6 +31,11 @@ describe("commercial inquiry", () => {
     expect(response.status).toBe(201);
     expect(mocks.email).toHaveBeenCalledWith(expect.objectContaining({ replyTo: inquiry.email, content: expect.stringContaining("Company: Example Co") }));
   });
+  it("accepts a residential project and includes its type in the inquiry", async () => {
+    const response = await fetch(url, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ ...inquiry, projectType: "residential" }) });
+    expect(response.status).toBe(201);
+    expect(mocks.email).toHaveBeenCalledWith(expect.objectContaining({ content: expect.stringContaining("Project type: residential") }));
+  });
   it("rejects invalid email and honeypot entries without sending", async () => {
     for (const body of [{ ...inquiry, email: "not-an-email" }, { ...inquiry, website: "spam" }]) {
       const response = await fetch(url, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });

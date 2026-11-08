@@ -171,10 +171,10 @@ function vitePluginPublicPlatformConfig(): Plugin {
 // Emit page-specific metadata for crawlers that do not execute the SPA.
 function vitePluginStaticPageMetadata(): Plugin {
   const metadata = {
-    about: ["About Our Commercial Framing Team", "Commercial metal framing and drywall subcontracting throughout Colorado, backed by 22 years of construction experience."],
-    services: ["Commercial Metal Framing & Drywall Services", "Interior and exterior metal framing, commercial drywall installation, finishing and painting in Colorado."],
+    about: ["About Our Framing Team", "Metal framing and drywall for commercial and residential projects throughout Colorado, backed by 22 years of construction experience."],
+    services: ["Metal Framing & Drywall Services", "Interior and exterior metal framing, drywall, finishing and painting for commercial and residential projects in Colorado."],
     work: ["Framing & Drywall Work", "Explore illustrative photography of the work involved in metal framing, drywall installation and finishing."],
-    contact: ["Commercial Subcontractor Quote", "Request a quote for commercial metal framing, drywall, finishing and painting in Colorado."],
+    contact: ["Project Quote", "Request a quote for metal framing, drywall, finishing and painting for commercial and residential projects in Colorado."],
   } as const;
   return {
     name: "static-page-metadata",

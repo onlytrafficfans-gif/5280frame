@@ -28,34 +28,34 @@ const copy = {
     langLabel: "Español",
     nav: { home: "Home", about: "Who we are", services: "Services", work: "Our Work", contact: "Request an estimate" },
     hero: {
-      eyebrow: "Commercial metal framing & drywall · Colorado",
-      title: "Commercial Metal Framing & Drywall Subcontractors in Colorado",
-      description: "Specializing in interior and exterior commercial metal framing, drywall installation, taping, finishing, and painting. Bringing 22 years of hands-on construction experience to commercial projects.",
-      primary: "Request a Subcontractor Quote",
+      eyebrow: "Metal framing & drywall · Colorado",
+      title: "Metal Framing & Drywall in Colorado",
+      description: "Interior and exterior metal framing, drywall installation, taping, finishing and painting for commercial and residential projects. Backed by 22 years of construction experience.",
+      primary: "Request a Quote",
       secondary: "Explore Our Services",
       note: "Metal framing to final finish / Colorado",
     },
     intro: {
       label: "01 — The work",
-      title: "Commercial framing to final finish.",
-      body: "We work with general contractors, construction companies and project managers on commercial metal framing and drywall projects throughout Colorado.",
+      title: "Framing to final finish.",
+      body: "We work with general contractors, construction companies and homeowners on commercial and residential projects throughout Colorado.",
       link: "Explore our services",
     },
     about: {
       label: "Who we are",
       title: "22 years across framing and finishing.",
-      body: "5280 Frame and Drywall LLC brings 22 years of hands-on construction experience across metal framing, drywall, taping, finishing and painting. We work with general contractors and construction companies on commercial projects throughout Colorado.",
-      points: ["22 years in construction", "Commercial metal framing", "Serving all of Colorado"],
+      body: "5280 Frame and Drywall LLC brings 22 years of hands-on construction experience across metal framing, drywall, taping, finishing and painting. We work with contractors and homeowners on commercial and residential projects throughout Colorado.",
+      points: ["22 years in construction", "Metal framing", "Serving all of Colorado"],
     },
     services: {
-      label: "02 — Commercial capabilities",
+      label: "02 — Our capabilities",
       title: "From metal framing to final finish.",
       description: "Interior and exterior metal framing, drywall installation, taping, finishing and painting. One subcontractor can coordinate the work from framing through the final finish.",
       items: [
-        { title: "Commercial metal framing", description: "Interior and exterior metal framing for commercial projects, coordinated with the drywall work that follows.", image: images.framing, tag: "01", alt: "Interior metal stud framing" },
-        { title: "Commercial drywall installation", description: "Drywall hanging and installation for commercial walls and ceilings, following framing work.", image: images.drywall, tag: "02", alt: "Drywall installation" },
+        { title: "Metal framing", description: "Interior and exterior metal framing for commercial and residential projects, coordinated with the drywall work that follows.", image: images.framing, tag: "01", alt: "Interior metal stud framing" },
+        { title: "Drywall installation", description: "Drywall hanging and installation for walls and ceilings, following framing work.", image: images.drywall, tag: "02", alt: "Drywall installation" },
         { title: "Taping, mudding & finishing", description: "Joint taping, compound and sanding to prepare drywall for final finishes.", image: images.finishing, tag: "03", alt: "Drywall finishing" },
-        { title: "Commercial painting", description: "Painting as part of commercial projects after drywall installation and finishing.", image: images.hero, tag: "04", alt: "Commercial interior under construction" },
+        { title: "Painting", description: "Painting as part of commercial and residential projects after drywall installation and finishing.", image: images.hero, tag: "04", alt: "Commercial interior under construction" },
         { title: "Framing through final finish", description: "Coordinate metal framing, drywall, taping, mudding, sanding and painting with one subcontractor.", image: images.framing, tag: "05", alt: "Metal framing in an interior under construction" },
       ],
     },
@@ -67,7 +67,7 @@ const copy = {
     },
     contact: {
       label: "04 — Request an estimate",
-      title: "Request a commercial subcontractor quote.",
+      title: "Request a project quote.",
       description: "Share the location, scope and timing. We’ll use the details to prepare your estimate.",
       form: {
         company: "Company name (optional)",
@@ -80,7 +80,7 @@ const copy = {
         servicePlaceholder: "Select a service",
         description: "Project description",
         descriptionPlaceholder: "Tell us about the location, scope, timing, or anything else that will help us understand the work.",
-        submit: "Request a commercial subcontractor quote",
+        submit: "Request a project quote",
         sending: "Sending inquiry…",
         required: "Required",
       },
@@ -90,40 +90,40 @@ const copy = {
       success: "Thanks — your inquiry was sent. We’ll follow up using the details you provided.",
       error: "We couldn’t send the inquiry right now. Please try again or email fandd5280@iCloud.com directly.",
     },
-    footer: "Commercial metal framing, drywall, finishing and painting across Colorado.",
+    footer: "Metal framing, drywall, finishing and painting for commercial and residential projects across Colorado.",
   },
   es: {
     langLabel: "English",
     nav: { home: "Inicio", about: "Quiénes somos", services: "Servicios", work: "Nuestro trabajo", contact: "Solicitar presupuesto" },
     hero: {
-      eyebrow: "Estructuras metálicas y tablaroca comercial · Colorado",
-      title: "Subcontratistas de estructuras metálicas y tablaroca comercial en Colorado",
-      description: "Especialistas en estructuras metálicas interiores y exteriores, instalación de tablaroca, encintado, acabado y pintura. Aportamos 22 años de experiencia práctica a proyectos comerciales.",
-      primary: "Solicitar presupuesto de subcontratación",
+      eyebrow: "Estructuras metálicas y tablaroca · Colorado",
+      title: "Estructuras metálicas y tablaroca en Colorado",
+      description: "Especialistas en estructuras metálicas interiores y exteriores, instalación de tablaroca, encintado, acabado y pintura. Aportamos 22 años de experiencia práctica a proyectos comerciales y residenciales.",
+      primary: "Solicitar presupuesto",
       secondary: "Ver nuestros servicios",
       note: "De la estructura metálica al acabado final / Colorado",
     },
     intro: {
       label: "01 — El trabajo",
-      title: "De la estructura comercial al acabado final.",
-      body: "Trabajamos con contratistas generales, empresas de construcción y gerentes de proyecto en estructuras metálicas y tablaroca comercial en Colorado.",
+      title: "De la estructura al acabado final.",
+      body: "Trabajamos con contratistas generales, empresas de construcción y propietarios en proyectos comerciales y residenciales en Colorado.",
       link: "Ver servicios",
     },
     about: {
       label: "Quiénes somos",
       title: "22 años en estructuras y acabados.",
-      body: "5280 Frame and Drywall LLC cuenta con 22 años de experiencia práctica en estructuras metálicas, tablaroca, encintado, acabados y pintura para proyectos comerciales en Colorado.",
-      points: ["22 años en construcción", "Estructuras metálicas comerciales", "Servicio en todo Colorado"],
+      body: "5280 Frame and Drywall LLC cuenta con 22 años de experiencia práctica en estructuras metálicas, tablaroca, encintado, acabados y pintura para proyectos comerciales y residenciales en Colorado.",
+      points: ["22 años en construcción", "Estructuras metálicas", "Servicio en todo Colorado"],
     },
     services: {
-      label: "02 — Capacidades comerciales",
+      label: "02 — Nuestros servicios",
       title: "De la estructura metálica al acabado final.",
       description: "Estructuras metálicas interiores y exteriores, instalación de tablaroca, encintado, acabados y pintura. Un solo subcontratista puede coordinar el trabajo desde la estructura hasta el acabado final.",
       items: [
-        { title: "Estructuras metálicas comerciales", description: "Estructuras metálicas interiores y exteriores para proyectos comerciales, coordinadas con la instalación de tablaroca.", image: images.framing, tag: "01", alt: "Estructura interior de postes metálicos" },
-        { title: "Instalación comercial de tablaroca", description: "Colocación e instalación de tablaroca para muros y plafones comerciales después de la estructura.", image: images.drywall, tag: "02", alt: "Instalación de tablaroca" },
+        { title: "Estructuras metálicas", description: "Estructuras metálicas interiores y exteriores para proyectos comerciales y residenciales, coordinadas con la instalación de tablaroca.", image: images.framing, tag: "01", alt: "Estructura interior de postes metálicos" },
+        { title: "Instalación de tablaroca", description: "Colocación e instalación de tablaroca para muros y plafones después de la estructura.", image: images.drywall, tag: "02", alt: "Instalación de tablaroca" },
         { title: "Encintado, mudding y acabado", description: "Encintado, compuesto y lijado de juntas para preparar la tablaroca para los acabados finales.", image: images.finishing, tag: "03", alt: "Acabado de tablaroca" },
-        { title: "Pintura comercial", description: "Pintura como parte de proyectos comerciales después de la instalación y el acabado de tablaroca.", image: images.hero, tag: "04", alt: "Interior comercial en construcción" },
+        { title: "Pintura", description: "Pintura como parte de proyectos comerciales y residenciales después de la instalación y el acabado de tablaroca.", image: images.hero, tag: "04", alt: "Interior comercial en construcción" },
         { title: "De la estructura al acabado final", description: "Coordine estructuras metálicas, tablaroca, encintado, compuesto, lijado y pintura con un solo subcontratista.", image: images.framing, tag: "05", alt: "Estructura metálica en un interior en construcción" },
       ],
     },
@@ -135,7 +135,7 @@ const copy = {
     },
     contact: {
       label: "04 — Solicitar presupuesto",
-      title: "Solicite un presupuesto de subcontratación comercial.",
+      title: "Solicite un presupuesto para su proyecto.",
       description: "Comparte la ubicación, el alcance y las fechas. Usaremos los detalles para preparar tu presupuesto.",
       form: {
         company: "Empresa (opcional)",
@@ -148,7 +148,7 @@ const copy = {
         servicePlaceholder: "Selecciona un servicio",
         description: "Descripción del proyecto",
         descriptionPlaceholder: "Cuéntanos sobre la ubicación, alcance, tiempos o cualquier detalle que nos ayude a entender el trabajo.",
-        submit: "Solicitar presupuesto de subcontratación",
+        submit: "Solicitar presupuesto",
         sending: "Enviando consulta…",
         required: "Obligatorio",
       },
@@ -158,7 +158,7 @@ const copy = {
       success: "Gracias — tu consulta fue enviada. Te contactaremos con los datos que proporcionaste.",
       error: "No pudimos enviar la consulta en este momento. Inténtalo de nuevo o escribe directamente a fandd5280@iCloud.com.",
     },
-    footer: "Estructuras metálicas comerciales, tablaroca, acabados y pintura en Colorado.",
+    footer: "Estructuras metálicas, tablaroca, acabados y pintura para proyectos comerciales y residenciales en Colorado.",
   },
 } as const;
 
@@ -177,13 +177,13 @@ function Home() {
   const [emailStatus, setEmailStatus] = useState<"checking" | "available" | "unavailable">("checking");
   const t = copy[language];
   const pageDescriptions = language === "en" ? {
-    about: "Commercial metal framing and drywall subcontracting throughout Colorado.",
-    services: "Interior and exterior metal framing, drywall, finishing and painting for commercial projects.",
+    about: "Metal framing and drywall subcontracting throughout Colorado.",
+    services: "Interior and exterior metal framing, drywall, finishing and painting for commercial and residential projects.",
     work: "Installation and finishing work in progress.",
     contact: "Tell us about your project and the work it needs."
   } : {
-    about: "Subcontratación de estructuras metálicas y tablaroca comercial en Colorado.",
-    services: "Estructuras metálicas interiores y exteriores, tablaroca, acabados y pintura para proyectos comerciales.",
+    about: "Estructuras metálicas y tablaroca para proyectos comerciales y residenciales en Colorado.",
+    services: "Estructuras metálicas interiores y exteriores, tablaroca, acabados y pintura para proyectos comerciales y residenciales.",
     work: "Instalación y acabados en proceso.",
     contact: "Cuéntanos sobre tu proyecto y el trabajo que necesita."
   };
@@ -194,8 +194,8 @@ function Home() {
   }, [language]);
   useEffect(() => {
     const titles: Record<Language, Record<Page, string>> = {
-      en: { home: "Commercial Metal Framing & Drywall | 5280 Frame and Drywall LLC", about: "About Our Commercial Framing Team | 5280 Frame and Drywall LLC", services: "Commercial Metal Framing & Drywall Services | 5280 Frame and Drywall LLC", work: "Framing & Drywall Work | 5280 Frame and Drywall LLC", contact: "Commercial Subcontractor Quote | 5280 Frame and Drywall LLC" },
-      es: { home: "Estructuras metálicas y tablaroca comercial | 5280 Frame and Drywall LLC", about: "Quiénes somos | 5280 Frame and Drywall LLC", services: "Servicios comerciales | 5280 Frame and Drywall LLC", work: "Nuestro trabajo | 5280 Frame and Drywall LLC", contact: "Presupuesto comercial | 5280 Frame and Drywall LLC" },
+      en: { home: "Metal Framing & Drywall | 5280 Frame and Drywall LLC", about: "About Our Framing Team | 5280 Frame and Drywall LLC", services: "Metal Framing & Drywall Services | 5280 Frame and Drywall LLC", work: "Framing & Drywall Work | 5280 Frame and Drywall LLC", contact: "Project Quote | 5280 Frame and Drywall LLC" },
+      es: { home: "Estructuras metálicas y tablaroca | 5280 Frame and Drywall LLC", about: "Quiénes somos | 5280 Frame and Drywall LLC", services: "Servicios | 5280 Frame and Drywall LLC", work: "Nuestro trabajo | 5280 Frame and Drywall LLC", contact: "Presupuesto | 5280 Frame and Drywall LLC" },
     };
     document.title = titles[language][page];
     const description = page === "home" ? t.hero.description : pageDescriptions[page];
@@ -356,13 +356,13 @@ function Home() {
         </section>}
 
         {page === "home" && <section className="home-scope section-pad">
-          <div className="container home-scope-grid"><div><SectionLabel>{language === "en" ? "03 — Complete project services" : "03 — Servicios integrales"}</SectionLabel><h2>{language === "en" ? "One subcontractor. From framing to paint." : "Un subcontratista. De la estructura a la pintura."}</h2></div><div><p>{language === "en" ? "For general contractors and construction companies, 5280 Frame and Drywall can coordinate interior and exterior metal framing, drywall installation, taping, mudding, sanding and painting as part of the same project." : "Para contratistas generales y empresas de construcción, 5280 Frame and Drywall puede coordinar estructuras metálicas interiores y exteriores, instalación de tablaroca, encintado, compuesto, lijado y pintura como parte del mismo proyecto."}</p><a className="text-link" href="/contact">{t.hero.primary}<ArrowRight size={16} /></a></div></div>
+          <div className="container home-scope-grid"><div><SectionLabel>{language === "en" ? "03 — Complete project services" : "03 — Servicios integrales"}</SectionLabel><h2>{language === "en" ? "One subcontractor. From framing to paint." : "Un subcontratista. De la estructura a la pintura."}</h2></div><div><p>{language === "en" ? "For commercial and residential projects, 5280 Frame and Drywall can coordinate interior and exterior metal framing, drywall installation, taping, mudding, sanding and painting as part of the same project." : "Para proyectos comerciales y residenciales, 5280 Frame and Drywall puede coordinar estructuras metálicas interiores y exteriores, instalación de tablaroca, encintado, compuesto, lijado y pintura como parte del mismo proyecto."}</p><a className="text-link" href="/contact">{t.hero.primary}<ArrowRight size={16} /></a></div></div>
         </section>}
 
         {page === "home" && <section className="home-gallery section-pad" aria-labelledby="home-gallery-title">
           <div className="container">
             <div className="home-gallery-heading">
-              <div><SectionLabel>{language === "en" ? "04 — In the field" : "04 — En obra"}</SectionLabel><h2 id="home-gallery-title">{language === "en" ? "Commercial construction in progress." : "Construcción comercial en progreso."}</h2></div>
+              <div><SectionLabel>{language === "en" ? "04 — In the field" : "04 — En obra"}</SectionLabel><h2 id="home-gallery-title">{language === "en" ? "Construction in progress." : "Construcción en progreso."}</h2></div>
               <div><p>{t.work.description}</p><a href="/work" className="text-link">{language === "en" ? "View the gallery" : "Ver la galería"}<ArrowRight size={16} /></a></div>
             </div>
             <div className="home-gallery-grid">{t.work.captions.slice(0, 3).map((caption, index) => <figure key={caption}><img src={`/images/work-${index + 1}.jpg`} alt={caption} loading="lazy" /><figcaption><span>0{index + 1}</span>{caption}</figcaption></figure>)}</div>
@@ -427,7 +427,7 @@ function Home() {
               <div className="form-row"><label>{t.contact.form.name}<input name="name" type="text" required maxLength={120} autoComplete="name" placeholder={t.contact.form.required} /></label><label>{t.contact.form.company}<input name="company" type="text" maxLength={160} autoComplete="organization" /></label></div>
               <div className="form-row"><label>{t.contact.form.email}<input name="email" type="email" required maxLength={320} autoComplete="email" placeholder={t.contact.form.required} /></label><label>{t.contact.form.phone}<input name="phone" type="tel" maxLength={40} autoComplete="tel" /></label></div>
               <div className="form-row"><label>{t.contact.form.location}<input name="projectLocation" type="text" maxLength={200} /></label><label>{t.contact.form.timeline}<input name="timeline" type="text" maxLength={120} /></label></div>
-              <input type="hidden" name="projectType" value="commercial" />
+              <label>{language === "en" ? "Project type" : "Tipo de proyecto"}<select name="projectType" required defaultValue=""><option value="" disabled>{language === "en" ? "Select project type" : "Seleccione el tipo de proyecto"}</option><option value="commercial">{language === "en" ? "Commercial" : "Comercial"}</option><option value="residential">{language === "en" ? "Residential" : "Residencial"}</option></select></label>
               <label>{t.contact.form.service}<select name="service" required defaultValue=""><option value="" disabled>{t.contact.form.servicePlaceholder}</option>{t.services.items.map((item) => <option key={item.tag} value={item.title}>{item.title}</option>)}</select></label>
               <label>{t.contact.form.description}<textarea name="description" rows={4} required maxLength={4000} placeholder={t.contact.form.descriptionPlaceholder} /></label>
               <button className="button button-accent form-submit" type="submit" disabled={formState === "sending" || emailStatus !== "available"}>{formState === "sending" ? t.contact.form.sending : t.contact.form.submit}<ArrowRight size={17} /></button>

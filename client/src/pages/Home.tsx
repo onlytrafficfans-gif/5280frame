@@ -11,12 +11,12 @@ import {
 } from "lucide-react";
 
 const images = {
-  hero: "/manus-storage/async-images/yBQ39O3Owexe3xjYu9gUVz/image-1.webp",
-  framing: "/manus-storage/async-images/yBQ39O3Owexe3xjYu9gUVz/image-2.webp",
-  drywall: "/manus-storage/async-images/yBQ39O3Owexe3xjYu9gUVz/image-3.webp",
-  finishing: "/manus-storage/async-images/yBQ39O3Owexe3xjYu9gUVz/image-4.webp",
-  ceiling: "/manus-storage/async-images/yBQ39O3Owexe3xjYu9gUVz/image-5.webp",
-  logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663919752325/TRnfwEnsOJYmfQgQ.PNG",
+  hero: "/images/image-1.webp",
+  framing: "/images/image-2.webp",
+  drywall: "/images/image-3.webp",
+  finishing: "/images/image-4.webp",
+  ceiling: "/images/image-5.webp",
+  logo: "/images/logo.jpg",
 };
 
 type Language = "en" | "es";
